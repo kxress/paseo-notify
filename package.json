@@ -2,6 +2,7 @@
   "name": "paseo-ear",
   "version": "1.0.0",
   "private": true,
+  "license": "WTFPL",
   "type": "module",
   "description": "Paseo client plugin for local agent completion audio.",
   "scripts": {

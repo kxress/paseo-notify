@@ -27,3 +27,7 @@ In Paseo, press Ctrl+K and run **Test Paseo Ear sound**. This plays the track on
 ## Events
 
 The plugin subscribes to the live timeline stream for active agents, including background work. It plays the track for `turn_completed` and `turn_failed` events. Canceled turns do not play it. Paseo does not replay events missed while the client is disconnected or suspended.
+
+## License
+
+WTFPL version 2. See [LICENSE](./LICENSE).
