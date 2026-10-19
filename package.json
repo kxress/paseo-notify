@@ -1,0 +1,18 @@
+{
+  "name": "paseo-ear",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Paseo client plugin for local agent completion audio.",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@getpaseo/client": "0.12.0",
+    "@getpaseo/plugin": "0.12.0",
+    "@getpaseo/protocol": "0.12.0",
+    "@types/react": "19.1.16",
+    "typescript": "5.9.3",
+    "zod": "4.4.3"
+  }
+}

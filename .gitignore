@@ -1,0 +1,4 @@
+node_modules/
+*.tgz
+.generate-audio.mjs
+*.log
