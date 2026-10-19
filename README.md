@@ -4,7 +4,7 @@ A client-side Paseo plugin that plays `Music/Paseo.mp3` once locally when an age
 
 ## Why this plugin exists
 
-On this Windows setup, Paseo's notification sound setting is enabled and notification permission is granted, but agent completion notifications still produce no audible sound. Paseo reports that its test notification was handed to Windows, yet no sound is heard. The exact cause is unclear, so this plugin works around it by listening for completion events in the Paseo client and playing the audio directly through Paseo's client audio API.
+On this setup, Paseo's agent completion notifications have produced no audible sound on either Windows or macOS. On Windows, the notification sound setting is enabled and permission is granted; Paseo reports that its test notification was handed to Windows, yet no sound is heard. The cause is unclear, so this plugin works around the missing completion sound by listening for completion events in the Paseo client and playing audio directly through Paseo's client audio API.
 
 The MP3 is bundled into `shared/paseo.ts` as base64 because Paseo's client audio API accepts audio data rather than a filesystem path. Update that asset from `Music/Paseo.mp3` when the track changes.
 
