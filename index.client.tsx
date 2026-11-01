@@ -133,16 +133,6 @@ export default function contribute(client: PluginClientContext): () => void {
       if (!stopped) await client.playAudio(source);
     }).catch((error: unknown) => console.error("Paseo Notify could not play its sound for " + label + ":", error));
   };
-  const dashboard = client.addScreen({
-    id: "dashboard",
-    title: "Paseo Notify",
-    Component: (props) => <SoundDashboard {...props} play={(source) => playSound(source, "dashboard preview")} />,
-  });
-  const sidebar = client.addSidebarHeaderItem({
-    id: "dashboard",
-    title: "Paseo Notify",
-    Component: ({ openScreen }) => <Pressable accessibilityRole="button" onPress={() => openScreen({ screenId: "dashboard" })} style={{ padding: 12 }}><Text style={{ color: "#e4e4e7" }}>Paseo Notify</Text></Pressable>,
-  });
   const settings = client.addSettingsScreen({
     id: "settings",
     title: "Paseo Notify settings",
@@ -191,7 +181,7 @@ export default function contribute(client: PluginClientContext): () => void {
   void start().catch((error: unknown) => { if (!stopped) console.error("Paseo Notify could not start its client listener:", error); });
   return () => {
     stopped = true;
-    dashboard(); sidebar(); settings(); removeTestCommand();
+    settings(); removeTestCommand();
     const directory = directorySubscription;
     directorySubscription = undefined;
     if (directory) void directory.release().catch((error: unknown) => console.error("Paseo Notify could not release the agent directory listener:", error));
