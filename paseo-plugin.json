@@ -1,6 +1,6 @@
 {
-  "id": "paseo-ear",
-  "name": "Paseo Ear",
+  "id": "paseo-notify",
+  "name": "Paseo Notify",
   "description": "Play one local audio alert on the client when an agent turn ends.",
   "requirements": { "paseo": ">=0.12.0" }
 }

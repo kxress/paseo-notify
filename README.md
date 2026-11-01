@@ -1,4 +1,4 @@
-# Paseo Ear
+# Paseo Notify
 
 A client-side Paseo plugin that plays `Music/Paseo.mp3` once locally when an agent turn completes or fails. Playback happens on the device running Paseo rather than on the daemon host or through the Windows toast sound setting.
 
@@ -22,7 +22,7 @@ Keep the Paseo client connected to that daemon. Client contributions run in each
 
 ## Check playback
 
-In Paseo, press Ctrl+K and run **Test Paseo Ear sound**. This plays the track once, matching completion alerts.
+In Paseo, press Ctrl+K and run **Test Paseo Notify sound**. This plays the track once, matching completion alerts.
 
 ## Events
 

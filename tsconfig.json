@@ -8,5 +8,5 @@
     "skipLibCheck": true,
     "jsx": "react-jsx"
   },
-  "include": ["index.client.ts"]
+  "include": ["index.client.tsx"]
 }
